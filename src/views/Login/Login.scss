@@ -1,0 +1,77 @@
+$facebook-btn: #011f46;
+$gmail-btn: #ff5900;
+$mail-btn: #e21c21;
+
+$facebook-hover-btn: #001633;
+$gmail-hover-btn: #ec5300;
+$mail-hover-btn: #b9181d;
+
+.Login {
+  display: grid;
+  place-items: center;
+  height: 100%;
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+
+    .heading {
+      margin-bottom: 46px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 52px;
+    }
+
+    button {
+      font-size: 32px;
+      line-height: 39px;
+      padding: 16px 71px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s ease-in;
+      font-weight: 400;
+
+      &:nth-child(1) {
+        background-color: $facebook-btn;
+
+        &:hover {
+          background-color: $facebook-hover-btn;
+        }
+      }
+
+      &:nth-child(2) {
+        background-color: $gmail-btn;
+        &:hover {
+          background-color: $gmail-hover-btn;
+        }
+      }
+
+      &:nth-child(3) {
+        background-color: $mail-btn;
+        &:hover {
+          background-color: $mail-hover-btn;
+        }
+      }
+    }
+  }
+
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    margin-top: 85px;
+
+    .ask,
+    .register-btn {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .register-btn {
+      font-weight: bold;
+    }
+  }
+}
